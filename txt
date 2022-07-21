@@ -1,5 +1,0 @@
-Here is your key: be395da6
-
-Please append it to all of your API requests,
-
-OMDb API: http://www.omdbapi.com/?i=tt3896198&apikey=be395da6
