@@ -1,0 +1,6 @@
+input:required {
+  background-image: linear-gradient(to right, red, orange);
+}
+body {
+  font-family: "Cormorant SC", serif;
+}

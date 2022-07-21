@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h2 id="heading">Search For Your Favorite Movie</h2>
+
+    <form>
+      <!-- API Key -->
+      <label for="input_api_label">API Key:</label><br />
+      <input type="text" id="api_key" required /><br />
+      <br />
+
+      <!-- Movie Title -->
+      <label for="input_label">Movie Title or IMBD ID:</label><br />
+      <input type="text" id="movie_title" required /><br />
+      <br />
+
+      <!-- Year -->
+      <label for="input_year_label">Year</label><br />
+      <input type="text" id="movie_year" optional /><br />
+      <br />
+
+      <!-- Movie Plot -->
+      <label for="input_plot_label">Movie Plot</label><br />
+      <input type="text" id="movie_plot" required /><br />
+
+      <br />
+      <!-- Button -->
+      <button id="search_button">Search</button>
+    </form>
+
+    <div id="search_results">
+      <img src="" alt="movie_img" />
+    </div>
+  </body>
+</html>
