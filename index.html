@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Search Website</title>
+    <!-- font awesome icons cdm -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- logo -->
+      <div class="logo">
+        <div class="container">
+          <p>Movie<span>Search</span></p>
+        </div>
+      </div>
+      <!-- end of logo -->
+      <!-- search container -->
+      <div class="search-container">
+        <div class="search-element">
+          <h3>Search for a movie:</h3>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search Movie Title ..."
+            id="movie-search-box"
+            onkeyup="findMovies()"
+            onclick="findMovies()"
+          />
+          <div class="search-list" id="search-list">
+            <!-- list here -->
+            <!-- <div class="search-list-item">
+                <div class="search-item-thumbnail">
+                    <img src="medium-cover.jpg">
+                </div>
+                <div class="search-item-info">
+                    <h3>Passion of the Christ</h3>
+                    <p>2004</p>
+                </div>
+            </div> -->
+          </div>
+        </div>
+        </div>
+        
+      </div>
+      <!-- end of search container -->
+
+      <!-- result container -->
+<div class="container">
+    <div class="result-container">
+        <div class="result-grid" id="result-grid">
+            <!-- movie info here -->
+            <!-- <div class="movie-poster">
+                <img src="medium-cover.jpg" alt="movie poster">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Passion of the Christ</h3>
+                <ul class="movie-misc-info">
+                    <li class="year"> Year: 2004</li>
+                    <li class="rated">Ratings: R</li>
+                    <li class="released">Released: 25 Feb 2004</li>
+                </ul>
+                <p class="genre"><b>Genre:</b> Drama</p>
+                <p class="writter"><b>Writer:</b> Benedict Fitzgerald, Mel Gibson</p>
+                <p class="actors"><b>Actors:</b> Jim Caviezel, Monica Bellucci, Maia Morgenste, Christo Jivkov</p>
+                <p class="plot"><b>Plot:</b> Depicts the final twelve hours in the life of Jesus of Nazareth, on the day of his crucifixion in Jerusalem.
+                </p>
+                <p class="language"><b>Langauge:</b> English, Aramaic, Latin, Hebrew</p>
+                <p class="awards"><b><i class="fas fa-award"></i></b> Nominated for 3 Oscard</p>
+            </div> -->
+        </div>
+    </div>
+</div>
+            <!-- end of esult container -->
+
+    </div>
+  </div>
+    <!-- movie app js -->
+    <script src="script.js"></script>
+  </body>
+</html>
