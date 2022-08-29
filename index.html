@@ -29,6 +29,7 @@
       <div class="search-container">
         <div class="search-element">
           <h3>Search for a movie:</h3>
+<form>
           <input
             type="text"
             class="form-control"
@@ -37,6 +38,10 @@
             onkeyup="findMovies()"
             onclick="findMovies()"
           />
+          <!-- Reset Button -->
+          <input type="reset" id="reset_button" value="Reset">
+
+        </form>
           <div class="search-list" id="search-list">
             <!-- list here -->
             <!-- <div class="search-list-item">
@@ -78,6 +83,24 @@
                 <p class="language"><b>Langauge:</b> English, Aramaic, Latin, Hebrew</p>
                 <p class="awards"><b><i class="fas fa-award"></i></b> Nominated for 3 Oscard</p>
             </div> -->
+
+            <button onclick="showHideNotes()" id="notes_buttons">Movie Notes Show/Hide</button>
+  
+            <br><br>
+            
+            <section class="movie-notes">
+            <div class="">
+                <form class='comment-form'>
+                <label for="name">Name: </label>
+                <input type="text" id='name'> <br>
+                <label for="email">Email: </label>
+                <input type="text" id='email'><br>
+                <label for="new-comment-field">Comment: </label>
+                <input type="text" id='new-comment-field'/><br><br>
+                <button class="comment_submit" type='submit'>Post</button><br>
+              </form>
+              </div>
+                </section>
         </div>
     </div>
 </div>
@@ -87,5 +110,7 @@
   </div>
     <!-- movie app js -->
     <script src="script.js"></script>
+    <script src="post_toggle.js"></script>
+
   </body>
 </html>

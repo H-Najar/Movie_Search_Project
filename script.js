@@ -64,6 +64,23 @@ function loadMovieDetails() {
   });
 }
 
+function showAlert() {
+  alert("You favorited this movie!");
+}
+
+let userSection = document.querySelector(".movie-notes");
+let isShow = true;
+
+function showHideNotes() {
+  if (isShow) {
+    userSection.style.display = "none";
+    isShow = false;
+  } else {
+    userSection.style.display = "block";
+    isShow = true;
+  }
+}
+
 function displayMovieDetails(details) {
   resultGrid.innerHTML = `
     <div class="movie-poster">
@@ -85,7 +102,32 @@ function displayMovieDetails(details) {
     </p>
     <p class="language"><b>Langauge:</b> ${details.Language}</p>
     <p class="awards"><b><i class="fas fa-award"></i></b> ${details.Awards}</p>
+    <br>
+    <button onclick="showAlert()" id="fav_buttons">Favorite</button>
+<br><br>
+
+
+<button onclick="showHideNotes()" id="notes_buttons">Movie Notes Show/Hide</button>
+  
+<br><br>
+
+<section class="movie-notes">
+<div class="">
+    <form class='comment-form'>
+    <label for="name">Name: </label>
+    <input type="text" id='name'> <br>
+    <label for="email">Email: </label>
+    <input type="text" id='email'><br>
+    <label for="new-comment-field">Comment: </label>
+    <input type="text" id='new-comment-field'/><br><br>
+    <button class="comment_submit" type='submit'>Post</button><br>
+  </form>
   </div>
+    </section>
+
+  </div>
+
+
   `;
 }
 
