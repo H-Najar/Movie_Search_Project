@@ -4,6 +4,8 @@
 
 // OMDb API: http://www.omdbapi.com/?i=tt3896198&apikey=be395da6
 
+// import { showHideNotes } from "./post_toggle";
+
 const movieSearchBox = document.getElementById("movie-search-box");
 const searchList = document.getElementById("search-list");
 const resultGrid = document.getElementById("result-grid");
@@ -68,6 +70,7 @@ function showAlert() {
   alert("You favorited this movie!");
 }
 
+//Hide and Show Movie Notes Function
 let userSection = document.querySelector(".movie-notes");
 let isShow = true;
 
